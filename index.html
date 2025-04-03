@@ -127,17 +127,37 @@
   font-style: italic;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   body {
+    display: flex;
     flex-direction: column;
     align-items: center;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
+    padding: 0;
+    margin: 0;
+    gap: 0;
   }
+
   .card-container {
-    scroll-snap-align: center;
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  .card {
+    transform: scale(0.95); /* opcional para respiro */
+  }
+
+  .hint {
+    display: none;
+  }
+html {
+  scroll-behavior: smooth;
+}
 }
 </style>
 <title>Dato Mata Relato</title><meta content="12 frases brutales sobre el uso del agua y la inteligencia artificial." name="description"/><meta content="Dato Mata Relato" property="og:title"/><meta content="La IA no es el problema. La hipocresía sí. Descubre las frases que lo demuestran." property="og:description"/><meta content="https://datomatarelato.co/preview.jpg" property="og:image"/><meta content="https://datomatarelato.co" property="og:url"/><meta content="summary_large_image" name="twitter:card"/></head>
